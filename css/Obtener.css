@@ -27,6 +27,7 @@ body::before {
     z-index: -1;
 }
 .header {
+    display: none;
     width: 100%;
     height: 10vh;
     position: relative;
@@ -34,6 +35,7 @@ body::before {
     flex-direction: column;
 }
 .header__logo {
+    display: none;
     width: 100%;
     height: 40%;
     padding: 0px 20px;
@@ -46,6 +48,8 @@ body::before {
     font-size: 2em;
 }
 .header__list {
+    display: none;
+    display: none;
     width: 100%;
     height: 60%;
     display: flex;
@@ -202,11 +206,104 @@ body::before {
     height: 100%;
 }
 
+.agregar {
+    width: 45%;
+    height: 95%;
+    background: pink;
+    position: absolute;
+    z-index: 5;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+.agregar__imagen {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+.agregar__parte1 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+}
+.agregar__parte1 a {
+    font-size: 3em;
+}
+.agregar__parte2 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agregar__details {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.agregar__details-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.agregar__details-title {
+    font-size: 2em;
+}
+.agregar_-details-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 2em;
+    gap: 25px;
+}
+.agregar__details--text {
+    width: 80%;
+    font-size: 1em;
+}
+.agregar__details-price {
+    font-size: 1.5em;
+}
+.agregar__contenedor-imagen {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agregar__contenedor-imagen img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.agregar__details-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.agregar__details-boton {
+    width: 40%;
+    padding: 20px 10px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    border-radius: 7px;
+    cursor: pointer;
+}
 .list__productos::-webkit-scrollbar {
     width: 12px;
 }
 
-.list__productos::-webkit-scrollbar-thumb {
+.list__productosp::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: linear-gradient(to top, #f3f77d, #f5ec69, #f8e055, #fbd441, #ffc72d);
 
@@ -216,7 +313,7 @@ body::before {
     width: 12px;
 }
 
-.main::-webkit-scrollbar-thumb {
+.mainp::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: linear-gradient(to top, #f3f77d, #f5ec69, #f8e055, #fbd441, #ffc72d);
 
